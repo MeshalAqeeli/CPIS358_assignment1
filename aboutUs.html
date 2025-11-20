@@ -39,11 +39,15 @@
         function setDarkMode() {
         document.body.style.backgroundColor = "#121212";
         document.body.style.color = "white";
+        document.getElementById("img").style.boxShadow =
+            "0px 8px 18px rgba(255,255,255,0.25)";
     }
 
     function setLightMode() {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+        document.getElementById("img").style.boxShadow =
+            "0px 8px 15px rgba(0,0,0,0.3)";
     }
     </script>
     <body>
@@ -52,7 +56,7 @@
     <input class="circularButton darkBTN" type="button" value="Dark Mode" onclick="setDarkMode()">
 </div>
 
-<img id="logo" class="shadow-down" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200" onclick="toggleSize()">
+<img id="img" class="shadow-down" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200" onclick="toggleSize()">
 
          <h1>About Us</h1>
         <article>
@@ -64,7 +68,7 @@
      <footer>
         <h5 id="contact-section">Contact Us</h5>
     <ul>
-        <li>Email: soppurt@receiptsaver.com</li>
+        <li>Email: support@receiptsaver.com</li>
         <li>Phone: +966-500-123456</li>
         <li>Address: Jeddah, Saudi Arabia</li>
         <li>Working Hours: 9 AM – 6 PM</li>

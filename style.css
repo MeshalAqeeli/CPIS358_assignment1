@@ -33,7 +33,7 @@ table {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2; /* above */
+    z-index: 2;
 }
 
 .darkBTN {
