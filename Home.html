@@ -23,6 +23,7 @@
         function setDarkMode() {
         document.body.style.backgroundColor = "#121212";
         document.body.style.color = "white";
+        document.getElementById("use").style.color = "white";
 
         document.querySelector("img").style.boxShadow =
             "0px 8px 18px rgba(255,255,255,0.25)";
@@ -73,7 +74,7 @@
             <section>
                 <div>
                     <h4 id="HowToUse-section">How to use</h4>
-                    <table>
+                    <table id="use">
                         <tr><td>1</td><td>Click on the login button to access your account or sign up if you are a new user.</td></tr>
                         <tr><td>2</td><td>Once logged in, you can upload your receipts by taking a photo or selecting an image from your device.</td></tr>
                         <tr><td>3</td><td>Organize your receipts into categories for easy retrieval later.</td></tr>
