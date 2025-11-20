@@ -19,6 +19,23 @@
     </style>
     </head>
     <script>
+       
+    let big = false;
+
+    function toggleSize() {
+        let img = document.getElementById("logo");
+
+        if (!big) {
+            img.width = 400;
+            img.height = 400;
+            big = true;
+        } else {
+            img.width = 200;
+            img.height = 200;
+            big = false;
+        }
+    }
+       
         function setDarkMode() {
             document.body.style.backgroundColor = "#121212";
             document.body.style.color = "white";
@@ -32,8 +49,9 @@
          <input class="circularButton shadow-down" type="button" value="Dark Mode" onclick="setDarkMode()">
         <input class="circularButton shadow-down" type="button" value="Light Mode" onclick="setLightMode()">
 
-         <img class="shadow-down" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200">
-        <h1>About Us</h1>
+<img id="logo" class="shadow-down" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200" onclick="toggleSize()">
+
+         <h1>About Us</h1>
         <article>
         Welcome to Receipt Saver, your number one source for all things related to receipt management. 
         We're dedicated to providing you the very best of digital receipt storage, with an emphasis 
