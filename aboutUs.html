@@ -53,8 +53,10 @@
     }
     </script>
     <body>
-         <input class="circularButton shadow-down" type="button" value="Dark Mode" onclick="setDarkMode()">
-        <input class="circularButton shadow-down" type="button" value="Light Mode" onclick="setLightMode()">
+         <div class="button-container">
+    <input class="circularButton lightBTN" type="button" value="Light Mode" onclick="setLightMode()">
+    <input class="circularButton darkBTN" type="button" value="Dark Mode" onclick="setDarkMode()">
+</div>
 
 <img id="logo" class="shadow-down" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200" onclick="toggleSize()">
 
