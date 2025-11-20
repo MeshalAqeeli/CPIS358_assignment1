@@ -24,19 +24,23 @@
         document.body.style.backgroundColor = "#121212";
         document.body.style.color = "white";
         document.getElementById("use").style.color = "white";
+
+        document.getElementById("img").style.boxShadow =
+            "0px 8px 18px rgba(255,255,255,0.25)";
     }
 
     function setLightMode() {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+
+        document.getElementById("img").style.boxShadow =
+            "0px 8px 15px rgba(0,0,0,0.3)";
     }
     </script>
     <body>
-         <div class="button-container">
-    <input class="circularButton lightBTN" type="button" value="Light Mode" onclick="setLightMode()">
-    <input class="circularButton darkBTN" type="button" value="Dark Mode" onclick="setDarkMode()">
-</div>
-            <a href="aboutUs.html"><img class="shadow-down"src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200 "></a>
+         <input class="circularButton shadow-down"  type="button" value="Dark Mode" onclick="setDarkMode()">
+        <input class="circularButton shadow-down"  type="button" value="Light Mode" onclick="setLightMode()">
+            <a href="aboutUs.html"><img class="shadow-down" id= "img" src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200 "></a>
             <h1>Welcome to Receipt Saver</h1>
         <a href="#HowToUse-section">How to use</a>
             <h3>What is the Warranty Wallet?</h3>
