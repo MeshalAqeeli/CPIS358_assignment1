@@ -27,3 +27,4 @@ function validateSignup() {
         alert("Signup successful!");
         return;
     }
+}
