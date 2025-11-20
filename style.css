@@ -7,7 +7,7 @@ fieldset { border: 1px solid #ddd; padding: 1rem; border-radius: .5rem; }
 label { display: block; margin: .4rem 0; }
 input[type="text"], input[type="password"], textarea, select { width: min(100%, 28rem); padding: .4rem; }
 .output { border: 1px dashed #bbb; padding: .5rem .75rem; border-radius: .5rem; background: #fafafa; margin-top: .5rem; }
-footer { margin-top: 2rem; font-size: .9rem; color: #555; }
+footer { margin-top: 2rem; font-size: .9rem; color: #06d702; }
 table {
             border: 1px solid white;
             border-collapse: collapse;
@@ -17,7 +17,10 @@ table {
             padding: 8px;
             font-size: 12px;
         }
-        img {
-    box-shadow: 0px 8px 12px rgba(0,0,0,0.4); }
+        
     .shadow-down {
     box-shadow: 0px 8px 12px rgba(0,0,0,0.4);}
+    img {
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+    border-radius: 10px; 
+}
