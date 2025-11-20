@@ -14,3 +14,16 @@ function validateLogin() {
         return;
     }
 }
+
+function validateSignup() {
+    var fullname = document.getElementById("fullname").value;
+    var email = document.getElementById("email").value;
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (fullname === "" || email === "" || username === "" || password === "") {
+        alert("Please fill in all fields");
+        return;
+    } else {
+        alert("Signup successful!");
+        return;
+    }
