@@ -4,16 +4,33 @@
         login page
     </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .special{
+             background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            hover: #45a049;
+        }
+        .special:hover {
+            background-color: #45a049;
+        }
+    </style>
+
     </head>
     <body>
+     <img src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200 ">
         <h1>Login to Receipt Saver</h1>
         <form action="" method="post">
             <label>Username:</label>
             <input type="text" id="username" name="username" ><br><br>
-            <labe>Password:</label>
+            <labe>Password:</label></br>
             <input type="password" id="password" name="password" ><br><br>
-            <input type="submit" value="Login">
-            <input type="submit" value="sign up" onclick="href='signup.html'">
+            <input class="special" type="button" value="Login">
+            <input class="special" type="button" value="sign up" onclick="toSignup()">
         </form>
     </body>
+    <script src="event.js"> </script>
 </html>
