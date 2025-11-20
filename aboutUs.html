@@ -3,8 +3,34 @@
         about us page
     </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .circularButton{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            cursor: pointer;
+            float: right;
+            font-size: .07in;
+        }
+    </style>
     </head>
+    <script>
+        function setDarkMode() {
+            document.body.style.backgroundColor = "#121212";
+            document.body.style.color = "white";
+        }
+        function setLightMode() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+    </script>
     <body>
+         <input class="circularButton"  type="button" value="Dark Mode" onclick="setDarkMode()">
+        <input class="circularButton"  type="button" value="Light Mode" onclick="setLightMode()">
                 <img src="ReceiptLogo.png" alt="receipt saver logo" width="200" height="200 ">
         <h1>About Us</h1>
         <p>Welcome to Receipt Saver, your number one source for all things related to receipt management. We're dedicated to providing you the very best of digital receipt storage, with an emphasis on convenience, security, and user-friendliness.</p>
