@@ -11,6 +11,7 @@ function validateLogin() {
         return;
     } else {
         alert("Login successful!");
+        window.location.href="Home.html"
         return;
     }
 }
