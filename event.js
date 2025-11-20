@@ -25,6 +25,7 @@ function validateSignup() {
         return;
     } else {
         alert("Signup successful!");
+        window.location.href="login.html"
         return;
     }
 }
